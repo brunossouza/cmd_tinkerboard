@@ -27,7 +27,7 @@ func getTemperature() {
 
 func main() {
 	var watchTime int
-	flag.IntVar(&watchTime, "w", 0, "tempo(em segundos) de entre cada interação do comando.")
+	flag.IntVar(&watchTime, "t", 0, "tempo(em segundos) entre cada interação do comando.")
 
 	flag.Parse()
 	watch := watchTime > 0
